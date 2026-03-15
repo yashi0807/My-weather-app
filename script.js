@@ -6,7 +6,7 @@ async function checkWeather(city) {
     if(!city) return;
 
     try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`);
+     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`);
         
         if (response.status == 404) {
             alert("City spelling check karo!");
